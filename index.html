@@ -60,7 +60,7 @@
 					current: null,
 					past : null,
 					async init() {
-						let resp = await fetch('https://megaweb.tn/fpl/history');
+						let resp = await fetch('https://my-fpl.vercel.app/api/history/');
 						this.data = await resp.json();
 						this.current = this.data.current
 						this.past = this.data.past

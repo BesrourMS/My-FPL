@@ -103,7 +103,7 @@
 							}
 						],
 						async init() {
-							let resp = await fetch('https://megaweb.tn/fpl/');
+							let resp = await fetch('https://my-fpl.vercel.app/api/');
 							this.data = await resp.json();
 							this.teams = this.data.teams
 							this.players = this.data.elements

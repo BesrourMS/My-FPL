@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');header('X-Powered-By: Mohamed Safouan Besrour');
 $curl = curl_init();
 
 curl_setopt_array($curl, [
